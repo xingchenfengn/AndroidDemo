@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="false"
+    android:repeatMode="restart"
+    android:shareInterpolator="true">
+
+    <!--属性
+     shareInterpolator:表示集合中的动画是否和集合共享同一个插值器。如果集合不指定插值器，那么子动画就需要单独制定所需的插值器或者使用默认值
+     duration:动画持续时间
+     fillAfater:动画结束以后View是否停留在结束位置，true表示View停留在结束位置，false则不停留
+      android:repeatMode  动画重复的Mode
+     -->
+
+    <alpha
+        android:fromAlpha="1"
+        android:toAlpha="0.5"></alpha>
+    <!--透明度动画
+     fromAlpha表示透明度起始值，比如0.1,
+     toAlpha表示透明度结束值，比如1-->
+
+
+    <scale
+        android:fromXScale="0.5"
+        android:fromYScale="0.5"
+        android:pivotX="20"
+        android:pivotY="20"
+        android:toXScale="1.2"
+        android:toYScale="1"></scale>
+    <!--缩放动画
+    android:fromXScale-水平方向缩放的起始值
+    android:toXScale-水平方向缩放结束值
+    android:fromYScale-竖直方向缩放的起始值
+    android:toScale-竖直方向缩放结束值
+    android:pivotX 缩放轴点的x坐标
+    android:pivotY缩放轴点的y坐标-->
+
+    <translate
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="100"
+        android:toYDelta="100"></translate>
+
+    <!-- 平移动画
+    android:fromXDelta-表示x的起始值
+    android:toXDelta-表示x的结束值
+    android:fromYDelta-表示y的起始值
+    android:toYDelta-表示y的结束值
+    -->
+
+    <rotate
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:pivotX="10"
+        android:pivotY="10"
+        android:toDegrees="360"></rotate>
+    <!--旋转动画
+    android:fromXDelta-旋转开始的角度
+    android:toDegrees="180"-旋转结束的角度
+     pivotX 缩放轴点的x坐标
+     pivotY缩放轴点的y坐标-->
+</set>
