@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true"
+    android:interpolator="@android:anim/accelerate_interpolator"
     android:fillAfter="false"
     android:repeatMode="restart"
-    android:shareInterpolator="true">
+    >
 
     <!--属性
      shareInterpolator:表示集合中的动画是否和集合共享同一个插值器。如果集合不指定插值器，那么子动画就需要单独制定所需的插值器或者使用默认值
@@ -22,6 +24,7 @@
     <scale
         android:fromXScale="0.5"
         android:fromYScale="0.5"
+        android:interpolator="@android:anim/bounce_interpolator"
         android:pivotX="20"
         android:pivotY="20"
         android:toXScale="1.2"

@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".EnterActiviy"
+            android:theme="@style/AppTheme.LaunchStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,6 +19,7 @@
         </activity>
         <activity android:name=".PropAnimActivity"></activity>
         <activity android:name=".ViewAnimationActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

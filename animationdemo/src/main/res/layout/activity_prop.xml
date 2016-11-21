@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/prop_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/boy" />
+
+    <Button
+        android:id="@+id/prop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:text="属性动画" />
+
+    <Button
+        android:id="@+id/prop_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="改变宽度" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/free_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自由落体" />
+
+        <Button
+            android:id="@+id/paowuxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抛物线" />
+    </LinearLayout>
+</FrameLayout>
